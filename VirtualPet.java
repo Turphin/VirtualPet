@@ -82,7 +82,10 @@ public class VirtualPet {
          } else if (choice == 5) {
             // nothing
          } else if (choice == 6) {
-            
+            happiness += 2;
+            hunger -= 5;
+            energy += 1;
+            System.out.println(petName + " found John and Cody's Emotional Support Peanut Butter!");
          } else {
             System.out.println("Invalid selection: " + choice);
          }
@@ -101,21 +104,19 @@ public class VirtualPet {
       // Print the appropriate ending message.
       input.close();
       
-      System.out.println();
-      
       if (happiness >= 15) {
          System.out.println("--- YOU WIN ---");
-         System.out.print("Mr. Pickles is super happy!");
+         System.out.print(petName + " is super happy!");
       }
       
       if (hunger >= 10) {
          System.out.println("--- GAME OVER ---");
-         System.out.print("Mr. Pickles got too hungry and ran away!");
+         System.out.print(petName + " got too hungry and ran away!");
       }
       
       if (energy <= 0) {
          System.out.println("--- GAME OVER ---");
-         System.out.print("Mr. Pickles got too tired!");
+         System.out.print(petName + " got too tired!");
       }
       
       if (choice == 5) {
