@@ -95,7 +95,7 @@ public class VirtualPet {
          
          // random function
          rand = (int)Math.random()*10;
-         if (rand = 7) {
+         if (rand == 7) {
             happiness += 1;
             hunger += 1;
             energy -= 1;
