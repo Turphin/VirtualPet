@@ -12,6 +12,7 @@ public class VirtualPet {
       
       int choice = 0;
       String petName = new String("");
+      int rand = 0;
       
       System.out.println("Welcome to Virtual Pet Simulator!");
       System.out.print("Name your pet: ");
@@ -91,6 +92,16 @@ public class VirtualPet {
          }
          
          System.out.println("\n");
+         
+         // random function
+         rand = (int)Math.random()*10;
+         if (rand = 7) {
+            happiness += 1;
+            hunger += 1;
+            energy -= 1;
+            System.out.println(petName + " went to the bathroom!");
+            System.out.println("\n");
+         }
       }
       
       // TODO 4 done:
